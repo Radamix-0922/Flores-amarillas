@@ -1626,15 +1626,19 @@ body {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 }
-/* --- FORZAR ROSA PASTEL EN TODO EL INICIO --- */
+/* --- FONDO ROSA EXCLUSIVO PANTALLA INICIAL --- */
 body.not-loaded,
-body.not-loaded *,
-body.not-loaded .night,
-body.not-loaded .container,
-body.not-loaded .title-container,
-body.not-loaded .description-container {
+body.not-loaded .night {
   background: #fff5f6 !important;
   background-image: radial-gradient(ellipse at top, #ffffff 0%, #ffe4e8 70%, #fcd2d9 100%) !important;
+}
+
+/* Quitar recuadros de fondo en los textos */
+body.not-loaded .title-container,
+body.not-loaded .description-container,
+body.not-loaded .container {
+  background: transparent !important;
+  background-image: none !important;
 }
 
 /* Colores de texto para la pantalla inicial */
