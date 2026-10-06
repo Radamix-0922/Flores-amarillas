@@ -7,8 +7,7 @@
 }
 
 :root {
-  /* Tono crema / blanco cálido */
-  --bg-calido: #fbf8eb;
+  --dark-color: #000;
 }
 
 body {
@@ -16,7 +15,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
-  background-color: var(--bg-calido);
+  background-color: var(--dark-color);
   overflow: hidden;
   perspective: 1000px;
 }
@@ -29,8 +28,13 @@ body {
   width: 100%;
   height: 100%;
   filter: blur(0.1vmin);
-  /* Degradado suave de blanco a amarillo claro */
-  background-image: radial-gradient(ellipse at top, #ffffff 0%, #fef5d0 70%, #f7e8a9 100%);
+  background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)),
+    radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)),
+    repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px,
+      transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px,
+      transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px,
+      rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(21, 255, 0),
+      rgb(240, 240, 240));
 }
 
 .flowers {
@@ -1626,28 +1630,5 @@ body {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 }
-/* --- FORZAR ROSA EN EL INICIO (CUALQUIER ESTADO) --- */
-body, 
-.night, 
-.container {
-  background: #fff5f6 !important;
-  background-image: radial-gradient(ellipse at top, #ffffff 0%, #ffe4e8 70%, #fcd2d9 100%) !important;
-}
 
-/* Texto legible en color vino / café oscuro */
-.title, 
-.description, 
-h1, 
-p, 
-span {
-  color: #4a2c32 !important;
-  text-shadow: none !important;
-}
-
-/* --- FONDO CREMA CUANDO SE ABRE LA ANIMACIÓN --- */
-body:not(.not-loaded), 
-body:not(.not-loaded) .night {
-  background: #fbf8eb !important;
-  background-image: radial-gradient(ellipse at top, #ffffff 0%, #fef5d0 70%, #f7e8a9 100%) !important;
-}
 /*# sourceMappingURL=main.css.map */
