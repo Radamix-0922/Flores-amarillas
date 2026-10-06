@@ -1626,19 +1626,25 @@ body {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 }
-/* --- FONDO ROSA SOLO PARA EL PRINCIPIO --- */
+/* --- FORZAR ROSA PASTEL EN TODO EL INICIO --- */
 body.not-loaded,
-body.not-loaded .night {
+body.not-loaded *,
+body.not-loaded .night,
+body.not-loaded .container,
+body.not-loaded .title-container,
+body.not-loaded .description-container {
   background: #fff5f6 !important;
   background-image: radial-gradient(ellipse at top, #ffffff 0%, #ffe4e8 70%, #fcd2d9 100%) !important;
 }
 
 /* Colores de texto para la pantalla inicial */
-.not-loaded .title,
-.not-loaded .description,
-.container h1,
-.container p {
-  color: #4a2c32 !important; /* Vino / café oscuro */
+body.not-loaded .title,
+body.not-loaded .description,
+body.not-loaded .container h1,
+body.not-loaded .container p,
+body.not-loaded h1,
+body.not-loaded p {
+  color: #4a2c32 !important;
   text-shadow: none !important;
 }
 
