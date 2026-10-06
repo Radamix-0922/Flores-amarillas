@@ -7,7 +7,8 @@
 }
 
 :root {
-  --dark-color: #000;
+  /* Tono crema / blanco cálido */
+  --bg-calido: #fbf8eb;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
   align-items: flex-end;
   justify-content: center;
   min-height: 100vh;
-  background-color: var(--dark-color);
+  background-color: var(--bg-calido);
   overflow: hidden;
   perspective: 1000px;
 }
@@ -28,13 +29,8 @@ body {
   width: 100%;
   height: 100%;
   filter: blur(0.1vmin);
-  background-image: radial-gradient(ellipse at top, transparent 0%, var(--dark-color)),
-    radial-gradient(ellipse at bottom, var(--dark-color), rgba(145, 233, 255, 0.2)),
-    repeating-linear-gradient(220deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px, transparent 19px,
-      transparent 22px), repeating-linear-gradient(189deg, rgb(0, 0, 0) 0px, rgb(0, 0, 0) 19px,
-      transparent 19px, transparent 22px), repeating-linear-gradient(148deg, rgb(0, 0, 0) 0px,
-      rgb(0, 0, 0) 19px, transparent 19px, transparent 22px), linear-gradient(90deg, rgb(21, 255, 0),
-      rgb(240, 240, 240));
+  /* Degradado suave de blanco a amarillo claro */
+  background-image: radial-gradient(ellipse at top, #ffffff 0%, #fef5d0 70%, #f7e8a9 100%);
 }
 
 .flowers {
@@ -1630,5 +1626,17 @@ body {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 }
+/* --- Ajuste de textos para fondo claro --- */
+.container h1,
+.container p,
+.title,
+.description {
+  color: #3e2723 !important; /* Café oscuro para buen contraste */
+  text-shadow: none !important;
+}
 
+/* Para resaltar palabras clave o textos destacados */
+.container span {
+  color: #b78103 !important; /* Dorado oscuro */
+}
 /*# sourceMappingURL=main.css.map */
