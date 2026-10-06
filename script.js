@@ -66,8 +66,7 @@ onload = () =>{
         // Crear corazones
         const heartsContainer = document.getElementById('hearts');
         const heartColors = ['heart-red', 'heart-pink', 'heart-purple', 'heart-gold', 'heart-blue'];
-        const heartEmojis = ['❤️', '💕', '💖', '💗', '💝'];
-
+        const heartEmojis = ['❤️‍🩹', '🐱', '🐶', '💖', '💗'];
         for (let i = 0; i < 40; i++) {
             const heart = document.createElement('div');
             heart.className = 'heart-particle ' + heartColors[Math.floor(Math.random() * heartColors.length)];
