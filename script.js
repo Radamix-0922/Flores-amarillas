@@ -112,7 +112,7 @@ onload = () =>{
             }
 
             // Reproducir música del regalo
-            const giftAudio = new Audio(''Https://videotourl.com/audio/1791272994250-44edbe22-597f-49c7-8ca5-48ea955d06e1.mp3'');
+            const giftAudio = new Audio('Https://videotourl.com/audio/1791272994250-44edbe22-597f-49c7-8ca5-48ea955d06e1.mp3');
             giftAudio.play().catch(e => console.log('Audio autoplay blocked:', e));
 
             // Ocultar pantalla de intro inmediatamente
