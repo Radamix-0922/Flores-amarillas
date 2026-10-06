@@ -1626,26 +1626,36 @@ body {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 }
-/* --- FONDO ROSA EXCLUSIVO PARA PANTALLA INICIAL --- */
-body.container,
-.container {
+/* --- PANTALLA INICIAL (MENSAJE) EN ROSA PASTEL --- */
+body.not-loaded,
+body.not-loaded .night {
   background: #fff5f6 !important;
   background-image: radial-gradient(ellipse at top, #ffffff 0%, #ffe4e8 70%, #fcd2d9 100%) !important;
 }
 
-/* Textos de la pantalla inicial */
-.container .title,
-.container .description,
-.container h1,
-.container p {
-  color: #4a2c32 !important; /* Vino / café oscuro */
+body.not-loaded .title,
+body.not-loaded .description,
+body.not-loaded h1,
+body.not-loaded p,
+body.not-loaded .title-container *,
+body.not-loaded .description-container * {
+  color: #4a2c32 !important;
   text-shadow: none !important;
 }
 
-/* --- FONDO CREMA/AMARILLO CÁLIDO PARA PANTALLA DE FLORES --- */
-body:not(.container),
-body:not(.container) .night {
+/* --- PANTALLA DE FLORES EN CREMA/AMARILLO --- */
+body:not(.not-loaded),
+body:not(.not-loaded) .night {
   background: #fbf8eb !important;
   background-image: radial-gradient(ellipse at top, #ffffff 0%, #fef5d0 70%, #f7e8a9 100%) !important;
+}
+
+.title,
+.description {
+  color: #3e2723 !important;
+}
+
+.container span {
+  color: #b78103 !important;
 }
 /*# sourceMappingURL=main.css.map */
