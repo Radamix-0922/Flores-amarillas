@@ -1626,36 +1626,28 @@ body {
   -webkit-animation-play-state: paused !important;
   animation-play-state: paused !important;
 }
-/* --- PANTALLA INICIAL (MENSAJE) EN ROSA PASTEL --- */
-body.not-loaded,
-body.not-loaded .night {
+/* --- FORZAR ROSA EN EL INICIO (CUALQUIER ESTADO) --- */
+body, 
+.night, 
+.container {
   background: #fff5f6 !important;
   background-image: radial-gradient(ellipse at top, #ffffff 0%, #ffe4e8 70%, #fcd2d9 100%) !important;
 }
 
-body.not-loaded .title,
-body.not-loaded .description,
-body.not-loaded h1,
-body.not-loaded p,
-body.not-loaded .title-container *,
-body.not-loaded .description-container * {
+/* Texto legible en color vino / café oscuro */
+.title, 
+.description, 
+h1, 
+p, 
+span {
   color: #4a2c32 !important;
   text-shadow: none !important;
 }
 
-/* --- PANTALLA DE FLORES EN CREMA/AMARILLO --- */
-body:not(.not-loaded),
+/* --- FONDO CREMA CUANDO SE ABRE LA ANIMACIÓN --- */
+body:not(.not-loaded), 
 body:not(.not-loaded) .night {
   background: #fbf8eb !important;
   background-image: radial-gradient(ellipse at top, #ffffff 0%, #fef5d0 70%, #f7e8a9 100%) !important;
-}
-
-.title,
-.description {
-  color: #3e2723 !important;
-}
-
-.container span {
-  color: #b78103 !important;
 }
 /*# sourceMappingURL=main.css.map */
