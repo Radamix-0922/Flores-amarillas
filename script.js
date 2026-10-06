@@ -81,7 +81,8 @@ onload = () =>{
 
         // Manejar el botón de música en la pantalla de inicio
         const musicButton = document.getElementById('musicButton');
-        let introAudio = new Audio('https://videotourl.com/audio/1789876530152-a6b081b9-8723-409d-918f-c1f03adc633b.mp3');
+        // 👇 ACTUALIZADO AQUÍ TAMBIÉN CON TU NUEVA URL
+        let introAudio = new Audio('https://videotourl.com/audio/1791274389780-b3e214c7-7ee2-4ad3-9ae0-bfaf2fbb3a31.mp3');
         let isPlaying = false;
 
         musicButton.addEventListener('click', () => {
@@ -111,7 +112,7 @@ onload = () =>{
             }
 
             // Reproducir música del regalo
-            const giftAudio = new Audio('Https://videotourl.com/audio/1791274389780-b3e214c7-7ee2-4ad3-9ae0-bfaf2fbb3a31.mp3');
+            const giftAudio = new Audio('https://videotourl.com/audio/1791274389780-b3e214c7-7ee2-4ad3-9ae0-bfaf2fbb3a31.mp3');
             giftAudio.play().catch(e => console.log('Audio autoplay blocked:', e));
 
             // Ocultar pantalla de intro inmediatamente
